@@ -1,0 +1,9 @@
+<p>heros works!</p>
+<h1>My Heros</h1>
+<ul class="heroes">
+    <li *ngFor="let hero of heros">
+        <a routerLink="/detail/{{ hero.id }}">
+            <span class="badge">{{ hero.name }}</span> {{ hero.id }}
+        </a>
+    </li>
+</ul>
